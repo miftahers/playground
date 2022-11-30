@@ -69,6 +69,12 @@ Butuh data:
 ```
 GET /api/v1/posts/:post_id
 ```
+### GET RECENT POST
+Butuh data:
+- tidak ada
+```
+GET /api/v1/posts/recent
+```
 ### EDIT POST
 - title
 - photo (maintenance)
