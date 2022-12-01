@@ -14,15 +14,15 @@ Butuh data:
 ```
 POST /api/v1/users/login
 ```
-## TOPICS
-### CREATE
+## TOPICS 
+### CREATE <JWT>
 Butuh data:
 - name
 - description
 ```
 POST /api/v1/topics/create
 ```
-### EDIT DESCRIPTION
+### EDIT DESCRIPTION <JWT>
 Butuh data:
 - description
 - topic_id (via URL Parameter)
@@ -41,14 +41,14 @@ Butuh data:
 ```
 GET /api/v1/topics/:topic_id
 ```
-### DELETE TOPIC
+### DELETE TOPIC <JWT>
 Butuh data:
 - topic_id (via URL Parameter)
 ```
 DELETE /api/v1/topics/delete/:topic_id
 ```
 ## POSTS
-### CREATE
+### CREATE <JWT>
 Butuh data:
 - title
 - photo (maintenance)
@@ -75,7 +75,7 @@ Butuh data:
 ```
 GET /api/v1/posts/recent
 ```
-### EDIT POST
+### EDIT POST <JWT>
 - title
 - photo (maintenance)
 - body
@@ -83,7 +83,7 @@ GET /api/v1/posts/recent
 ```
 PUT /api/v1/posts/edit/:post_id
 ```
-### DELETE POST
+### DELETE POST <JWT>
 - post_id (via URL Parameter)
 ```
 DELETE /api/v1/posts/delete/:post_id
@@ -95,22 +95,62 @@ Butuh data:
 ```
 GET /api/v1/posts/comments/:post_id
 ```
-### CREATE COMMENT
+### CREATE COMMENT <JWT>
 Butuh data:
 - body
 - post_id (via URL Parameter)
 ```
 POST /api/v1/posts/comments/create/:post_id
 ```
-### EDIT COMMENT
+### EDIT COMMENT <JWT>
 Butuh data:
 - body
 - comment_id (via URL Parameter)
 ```
 PUT /api/v1/posts/comments/edit/:comment_id
 ```
-### DELETE COMMENT
+### DELETE COMMENT <JWT>
 Butuh data:
 - comment_id (via URL Parameter)
 ```
 DELETE /api/v1/posts/comments/delete/:comment_id
+
+## REPLIES
+### GET REPLIES
+Butuh data:
+- comment_id (via URL Parameter)
+```
+GET /api/v1/posts/comments/replies/:comment_id
+```
+### NEW REPLY <JWT>
+Butuh data:
+- body
+- comment_id (via URL Parameter)
+```
+POST /api/v1/posts/comments/replies/create/:comment_id
+```
+### EDIT REPLY <JWT>
+Butuh data:
+- body
+- comment_id (via URL Parameter)
+```
+PUT /api/v1/posts/comments/replies/edit/:comment_id
+```
+### DELETE REPLY <JWT>
+- comment_id (via URL Parameter)
+```
+DELETE /api/v1/posts/comments/replies/delete/:comment_id
+```
+## LIKES
+### LIKE <JWT>
+Butuh data:
+- post_id (via URL Parameter)
+```
+POST /api/v1/posts/likes/:post_id
+```
+### DISLIKE <JWT>
+Butuh data:
+- post_id (via URL Parameter)
+```
+POST /api/v1/posts/dislike/:post_id
+```
