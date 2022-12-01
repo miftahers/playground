@@ -63,7 +63,7 @@ Butuh data:
 ```
 GET /api/v1/posts/all/:topic_name
 ```
-### GET POST
+### GET POST by POST_ID
 Butuh data:
 - post_id (via URL Parameter)
 ```
@@ -89,7 +89,7 @@ PUT /api/v1/posts/edit/:post_id
 DELETE /api/v1/posts/delete/:post_id
 ```
 ## COMMENTS
-### GET ALL COMMENT
+### GET ALL COMMENT IN A POST BY POST_ID
 Butuh data:
 - post_id (via URL Parameter)
 ```
@@ -116,7 +116,7 @@ Butuh data:
 DELETE /api/v1/posts/comments/delete/:comment_id
 ```
 ## REPLIES
-### GET REPLIES
+### GET REPLIES BY COMMENT_ID
 Butuh data:
 - comment_id (via URL Parameter)
 ```
