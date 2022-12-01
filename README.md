@@ -114,7 +114,7 @@ Butuh data:
 - comment_id (via URL Parameter)
 ```
 DELETE /api/v1/posts/comments/delete/:comment_id
-
+```
 ## REPLIES
 ### GET REPLIES
 Butuh data:
