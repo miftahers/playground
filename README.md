@@ -60,8 +60,10 @@ POST /api/v1/posts/create/:topic_name
 ### GET ALL POST BY TOPIC_NAME
 Butuh data:
 - topic_name (via URL Parameter)
+- page number (via Query Parameter)
+*20 data per page
 ```
-GET /api/v1/posts/all/:topic_name
+GET /api/v1/posts/all/:topic_name?page=
 ```
 ### GET POST by POST_ID
 Butuh data:
@@ -71,9 +73,10 @@ GET /api/v1/posts/:post_id
 ```
 ### GET RECENT POST (ALL ENGGAK PER TOPIC LIMIT 20 Data)
 Butuh data:
-- tidak ada
+- page (via Query Parameter)
+*20 data per page
 ```
-GET /api/v1/posts/recent
+GET /api/v1/posts/recent?page=
 ```
 ### EDIT POST {JWT}
 - title
