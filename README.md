@@ -57,7 +57,7 @@ Butuh data:
 ```
 POST /api/v1/posts/create/:topic_name
 ```
-### GET ALL POST
+### GET ALL POST BY TOPIC_NAME
 Butuh data:
 - topic_name (via URL Parameter)
 ```
