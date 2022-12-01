@@ -14,6 +14,12 @@ Butuh data:
 ```
 POST /api/v1/users/login
 ```
+### GET USERS
+Butuh data:
+- page (via Query Parameter)
+```
+GET /api/v1/users?page=
+```
 ## TOPICS 
 ### CREATE {JWT}
 Butuh data:
