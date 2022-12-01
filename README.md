@@ -69,7 +69,7 @@ Butuh data:
 ```
 GET /api/v1/posts/:post_id
 ```
-### GET RECENT POST
+### GET RECENT POST (ALL ENGGAK PER TOPIC LIMIT 20 Data)
 Butuh data:
 - tidak ada
 ```
