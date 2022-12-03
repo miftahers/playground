@@ -1,5 +1,5 @@
 ## USERS
-### REGISTER
+`REGISTER`
 ```
 Butuh data:
 - email
@@ -8,7 +8,7 @@ Butuh data:
 
 POST /api/v1/users/register
 ```
-### LOGIN
+`LOGIN`
 ```
 Butuh data:
 - email
