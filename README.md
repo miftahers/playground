@@ -29,7 +29,6 @@ Butuh data:
 POST /api/v1/topics/create
 ```
 `EDIT DESCRIPTION {JWT}`
-```
 Butuh data:
 - description
 - topic_id (via URL Parameter)
@@ -94,6 +93,7 @@ GET /api/v1/posts/recent?page=
 PUT /api/v1/posts/edit/:post_id
 ```
 `DELETE POST {JWT}`
+Butuh data:
 - post_id (via URL Parameter)
 ```
 DELETE /api/v1/posts/delete/:post_id
@@ -147,6 +147,7 @@ Butuh data:
 PUT /api/v1/posts/comments/replies/edit/:comment_id
 ```
 `DELETE REPLY {JWT}`
+Butuh data:
 - comment_id (via URL Parameter)
 ```
 DELETE /api/v1/posts/comments/replies/delete/:comment_id
