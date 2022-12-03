@@ -1,38 +1,43 @@
 ## USERS
 ### REGISTER
+```
 Butuh data:
 - email
 - username
 - password
-```
+
 POST /api/v1/users/register
 ```
 ### LOGIN
+```
 Butuh data:
 - email
 - password
-```
+
 POST /api/v1/users/login
 ```
 ### GET USERS
+```
 Butuh data:
 - page (via Query Parameter)
-```
+
 GET /api/v1/users?page=
 ```
 ## TOPICS 
 ### CREATE {JWT}
+```
 Butuh data:
 - name
 - description
-```
+
 POST /api/v1/topics/create
 ```
 ### EDIT DESCRIPTION {JWT}
+```
 Butuh data:
 - description
 - topic_id (via URL Parameter)
-```
+
 PUT /api/v1/topics/edit_description/:topic_id
 ```
 ### GET ALL TOPICS
