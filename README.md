@@ -242,3 +242,25 @@ Input:
 ```
 GET /api/v1/posts/bookmarks/all
 ```
+# Followed Post
+`Add new Followed Post {JWT}`
+
+Butuh data:
+- post_id (PATH)
+```
+POST /api/v1/posts/followed-posts/:post_id
+```
+`Delete Followed Post {JWT}`
+
+Butuh data:
+- post_id (PATH)
+```
+DELETE /api/v1/posts/followed-posts/:post_id
+```
+`Get all followed post {JWT}`
+
+Butuh data:
+- tidak ada
+```
+GET /api/v1/posts/followed-posts/all
+```
